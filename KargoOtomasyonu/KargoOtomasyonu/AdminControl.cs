@@ -25,6 +25,7 @@ namespace KargoOtomasyonu
         {
             adminbilgicek();
             gondericicek();
+            gondericicek2();
             
         }
         private void tbtemizle()
@@ -33,6 +34,21 @@ namespace KargoOtomasyonu
             tbgondericisoyad2.Text = "";
             tbgondericitc2.Text = "";
             tbgondericitel2.Text = "";
+        }
+        private void tbtemizle2()
+        {
+            tbbarkod.Text = "";
+            tbgondericiid.Text = "";
+            tbgondericiad.Text = "";
+            tbgondericisoyad.Text = "";
+            tbgondericitc.Text = "";
+            tbgondericitel.Text = "";
+            tbaliciad.Text = "";
+            tbalicisoyad.Text = "";
+            tbalicitel.Text = "";
+            tbaliciadres.Text = "";
+            tbkargoicerik.Text = "";
+
         }
         private void gondericicek()
         {
@@ -49,6 +65,24 @@ namespace KargoOtomasyonu
                 Item.SubItems.Add(oku["TC"].ToString());
                 Item.SubItems.Add(oku["Telefon"].ToString());
                 listviewgonderici.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void gondericicek2()
+        {
+            listviewgonderici2.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici2.Items.Add(Item);
             }
             baglanti.Close();
         }
@@ -102,6 +136,24 @@ namespace KargoOtomasyonu
             tbadminıd.Text = adminid;
             baglanti.Close();
         }
+        private void kargoekle()
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(@"insert into KargoBilgi(Barkod,Musteri_ID,Alici_Ad,Alici_Soyad,Alici_Tel,Alici_Adres,Durum,Icerik,Hassaslik) 
+                                                                                                    values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)",baglanti);
+            komut.Parameters.AddWithValue("@p1",tbbarkod.Text);
+            komut.Parameters.AddWithValue("@p2",tbgondericiid.Text);
+            komut.Parameters.AddWithValue("@p3",tbaliciad.Text);
+            komut.Parameters.AddWithValue("@p4",tbalicisoyad.Text);
+            komut.Parameters.AddWithValue("@p5",tbalicitel.Text);
+            komut.Parameters.AddWithValue("@p6",tbaliciadres.Text);
+            komut.Parameters.AddWithValue("@p7",cbdurum.Text);
+            komut.Parameters.AddWithValue("@p8",tbkargoicerik.Text);
+            komut.Parameters.AddWithValue("@p9",cbhassas.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();        
+        }
+ 
         private void btnkapat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -186,6 +238,28 @@ namespace KargoOtomasyonu
         }
 
         private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listviewgonderici2_Click(object sender, EventArgs e)
+        {
+            tbgondericiid.Text = listviewgonderici2.SelectedItems[0].SubItems[0].Text;
+            tbgondericiad.Text = listviewgonderici2.SelectedItems[0].SubItems[1].Text;
+            tbgondericisoyad.Text = listviewgonderici2.SelectedItems[0].SubItems[2].Text;
+            tbgondericitc.Text = listviewgonderici2.SelectedItems[0].SubItems[3].Text;
+            tbgondericitel.Text = listviewgonderici2.SelectedItems[0].SubItems[4].Text;
+        }
+
+        private void btnkargoekle_Click(object sender, EventArgs e)
+        {
+            
+            kargoekle();
+            tbtemizle2();
+            MessageBox.Show("Ekleme Başarılı");
+        }
+
+        private void btnkargoduzenle_Click(object sender, EventArgs e)
         {
 
         }

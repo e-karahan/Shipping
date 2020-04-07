@@ -43,8 +43,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnkargoekle = new System.Windows.Forms.Button();
-            this.btnkargosil = new System.Windows.Forms.Button();
-            this.btnkargoduzenle = new System.Windows.Forms.Button();
             this.tbkargoicerik = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -68,7 +66,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.tbbarkod = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listviewgonderici2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -94,7 +92,7 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cbdurum = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbhassas = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -239,13 +237,11 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.comboBox1);
+            this.groupBox7.Controls.Add(this.cbhassas);
             this.groupBox7.Controls.Add(this.cbdurum);
             this.groupBox7.Controls.Add(this.label1);
-            this.groupBox7.Controls.Add(this.listView1);
+            this.groupBox7.Controls.Add(this.listviewgonderici2);
             this.groupBox7.Controls.Add(this.btnkargoekle);
-            this.groupBox7.Controls.Add(this.btnkargosil);
-            this.groupBox7.Controls.Add(this.btnkargoduzenle);
             this.groupBox7.Controls.Add(this.tbkargoicerik);
             this.groupBox7.Controls.Add(this.label25);
             this.groupBox7.Controls.Add(this.label24);
@@ -278,30 +274,13 @@
             // 
             // btnkargoekle
             // 
-            this.btnkargoekle.Location = new System.Drawing.Point(256, 399);
+            this.btnkargoekle.Location = new System.Drawing.Point(256, 370);
             this.btnkargoekle.Name = "btnkargoekle";
             this.btnkargoekle.Size = new System.Drawing.Size(106, 23);
             this.btnkargoekle.TabIndex = 45;
             this.btnkargoekle.Text = "Kargo Ekle";
             this.btnkargoekle.UseVisualStyleBackColor = true;
-            // 
-            // btnkargosil
-            // 
-            this.btnkargosil.Location = new System.Drawing.Point(148, 370);
-            this.btnkargosil.Name = "btnkargosil";
-            this.btnkargosil.Size = new System.Drawing.Size(106, 23);
-            this.btnkargosil.TabIndex = 44;
-            this.btnkargosil.Text = "Kargo Sil";
-            this.btnkargosil.UseVisualStyleBackColor = true;
-            // 
-            // btnkargoduzenle
-            // 
-            this.btnkargoduzenle.Location = new System.Drawing.Point(256, 370);
-            this.btnkargoduzenle.Name = "btnkargoduzenle";
-            this.btnkargoduzenle.Size = new System.Drawing.Size(106, 23);
-            this.btnkargoduzenle.TabIndex = 43;
-            this.btnkargoduzenle.Text = "Kargo Düzenle";
-            this.btnkargoduzenle.UseVisualStyleBackColor = true;
+            this.btnkargoekle.Click += new System.EventHandler(this.btnkargoekle_Click);
             // 
             // tbkargoicerik
             // 
@@ -400,6 +379,7 @@
             // 
             // tbgondericitel
             // 
+            this.tbgondericitel.Enabled = false;
             this.tbgondericitel.Location = new System.Drawing.Point(148, 160);
             this.tbgondericitel.Name = "tbgondericitel";
             this.tbgondericitel.Size = new System.Drawing.Size(214, 20);
@@ -417,6 +397,7 @@
             // 
             // tbgondericiid
             // 
+            this.tbgondericiid.Enabled = false;
             this.tbgondericiid.Location = new System.Drawing.Point(148, 56);
             this.tbgondericiid.Name = "tbgondericiid";
             this.tbgondericiid.Size = new System.Drawing.Size(214, 20);
@@ -424,6 +405,7 @@
             // 
             // tbgondericiad
             // 
+            this.tbgondericiad.Enabled = false;
             this.tbgondericiad.Location = new System.Drawing.Point(148, 82);
             this.tbgondericiad.Name = "tbgondericiad";
             this.tbgondericiad.Size = new System.Drawing.Size(214, 20);
@@ -431,6 +413,7 @@
             // 
             // tbgondericisoyad
             // 
+            this.tbgondericisoyad.Enabled = false;
             this.tbgondericisoyad.Location = new System.Drawing.Point(148, 108);
             this.tbgondericisoyad.Name = "tbgondericisoyad";
             this.tbgondericisoyad.Size = new System.Drawing.Size(214, 20);
@@ -438,6 +421,7 @@
             // 
             // tbgondericitc
             // 
+            this.tbgondericitc.Enabled = false;
             this.tbgondericitc.Location = new System.Drawing.Point(148, 134);
             this.tbgondericitc.Name = "tbgondericitc";
             this.tbgondericitc.Size = new System.Drawing.Size(214, 20);
@@ -501,21 +485,22 @@
             this.label18.TabIndex = 15;
             this.label18.Text = "Barkod :";
             // 
-            // listView1
+            // listviewgonderici2
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewgonderici2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(383, 31);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(349, 370);
-            this.listView1.TabIndex = 46;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listviewgonderici2.FullRowSelect = true;
+            this.listviewgonderici2.Location = new System.Drawing.Point(383, 31);
+            this.listviewgonderici2.Name = "listviewgonderici2";
+            this.listviewgonderici2.Size = new System.Drawing.Size(349, 370);
+            this.listviewgonderici2.TabIndex = 46;
+            this.listviewgonderici2.UseCompatibleStateImageBehavior = false;
+            this.listviewgonderici2.View = System.Windows.Forms.View.Details;
+            this.listviewgonderici2.Click += new System.EventHandler(this.listviewgonderici2_Click);
             // 
             // columnHeader1
             // 
@@ -699,7 +684,7 @@
             // columnHeader8
             // 
             this.columnHeader8.Text = "Soyad";
-            this.columnHeader8.Width = 85;
+            this.columnHeader8.Width = 69;
             // 
             // columnHeader9
             // 
@@ -709,6 +694,7 @@
             // columnHeader10
             // 
             this.columnHeader10.Text = "Telefon";
+            this.columnHeader10.Width = 79;
             // 
             // cbdurum
             // 
@@ -722,16 +708,16 @@
             this.cbdurum.Size = new System.Drawing.Size(214, 21);
             this.cbdurum.TabIndex = 49;
             // 
-            // comboBox1
+            // cbhassas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbhassas.FormattingEnabled = true;
+            this.cbhassas.Items.AddRange(new object[] {
             "Kırılabilir",
             "Kırılmaz"});
-            this.comboBox1.Location = new System.Drawing.Point(148, 343);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 21);
-            this.comboBox1.TabIndex = 50;
+            this.cbhassas.Location = new System.Drawing.Point(148, 343);
+            this.cbhassas.Name = "cbhassas";
+            this.cbhassas.Size = new System.Drawing.Size(214, 21);
+            this.cbhassas.TabIndex = 50;
             // 
             // AdminControl
             // 
@@ -772,8 +758,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button btnkargoekle;
-        private System.Windows.Forms.Button btnkargosil;
-        private System.Windows.Forms.Button btnkargoduzenle;
         private System.Windows.Forms.TextBox tbkargoicerik;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
@@ -797,7 +781,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox tbbarkod;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listviewgonderici2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -823,7 +807,7 @@
         private System.Windows.Forms.TextBox tbgondericiad2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbdurum;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbhassas;
 
     }
 }
