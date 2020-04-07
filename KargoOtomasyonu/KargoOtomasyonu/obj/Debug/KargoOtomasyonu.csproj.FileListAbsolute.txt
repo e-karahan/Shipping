@@ -1,0 +1,20 @@
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.exe.config
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.Admin.resources
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.Properties.Resources.resources
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.csproj.GenerateResource.Cache
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.exe
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.pdb
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.exe
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.pdb
+C:\Users\emirh\Documents\Visual Studio 2013\Projects\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.AdminControl.resources
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.exe.config
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.exe
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.pdb
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.exe
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\bin\Debug\KargoOtomasyonu.pdb
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.Admin.resources
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.AdminControl.resources
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.Properties.Resources.resources
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.csproj.GenerateResource.Cache
