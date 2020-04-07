@@ -87,7 +87,7 @@
             this.btngondericiekle = new System.Windows.Forms.Button();
             this.btngondericisil = new System.Windows.Forms.Button();
             this.btngondericiduzenle = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.listviewgonderici = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -287,7 +287,7 @@
             // 
             // btnkargosil
             // 
-            this.btnkargosil.Location = new System.Drawing.Point(148, 368);
+            this.btnkargosil.Location = new System.Drawing.Point(148, 370);
             this.btnkargosil.Name = "btnkargosil";
             this.btnkargosil.Size = new System.Drawing.Size(106, 23);
             this.btnkargosil.TabIndex = 44;
@@ -509,7 +509,8 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.listView1.Location = new System.Drawing.Point(393, 19);
+            this.listView1.FullRowSelect = true;
+            this.listView1.Location = new System.Drawing.Point(383, 31);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(349, 370);
             this.listView1.TabIndex = 46;
@@ -550,7 +551,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.listView2);
+            this.tabPage4.Controls.Add(this.listviewgonderici);
             this.tabPage4.Controls.Add(this.btngondericiekle);
             this.tabPage4.Controls.Add(this.btngondericisil);
             this.tabPage4.Controls.Add(this.btngondericiduzenle);
@@ -569,6 +570,7 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Gönderici İşlemleri";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // tbgondericisoyad2
             // 
@@ -646,6 +648,7 @@
             this.btngondericiekle.TabIndex = 48;
             this.btngondericiekle.Text = "Gönderici Ekle";
             this.btngondericiekle.UseVisualStyleBackColor = true;
+            this.btngondericiekle.Click += new System.EventHandler(this.btngondericiekle_Click);
             // 
             // btngondericisil
             // 
@@ -655,6 +658,7 @@
             this.btngondericisil.TabIndex = 47;
             this.btngondericisil.Text = "Gönderici Sil";
             this.btngondericisil.UseVisualStyleBackColor = true;
+            this.btngondericisil.Click += new System.EventHandler(this.btngondericisil_Click);
             // 
             // btngondericiduzenle
             // 
@@ -664,21 +668,24 @@
             this.btngondericiduzenle.TabIndex = 46;
             this.btngondericiduzenle.Text = "Gönderici Düzenle";
             this.btngondericiduzenle.UseVisualStyleBackColor = true;
+            this.btngondericiduzenle.Click += new System.EventHandler(this.btngondericiduzenle_Click);
             // 
-            // listView2
+            // listviewgonderici
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewgonderici.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9,
             this.columnHeader10});
-            this.listView2.Location = new System.Drawing.Point(354, 22);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(393, 265);
-            this.listView2.TabIndex = 49;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listviewgonderici.FullRowSelect = true;
+            this.listviewgonderici.Location = new System.Drawing.Point(354, 22);
+            this.listviewgonderici.Name = "listviewgonderici";
+            this.listviewgonderici.Size = new System.Drawing.Size(393, 265);
+            this.listviewgonderici.TabIndex = 49;
+            this.listviewgonderici.UseCompatibleStateImageBehavior = false;
+            this.listviewgonderici.View = System.Windows.Forms.View.Details;
+            this.listviewgonderici.Click += new System.EventHandler(this.listviewgonderici_Click);
             // 
             // columnHeader6
             // 
@@ -798,7 +805,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listviewgonderici;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;

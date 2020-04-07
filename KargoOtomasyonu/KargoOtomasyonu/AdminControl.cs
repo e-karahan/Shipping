@@ -15,6 +15,7 @@ namespace KargoOtomasyonu
     {
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-NVUBKFR;Initial Catalog=Kargo;Integrated Security=True");
         public string adminid; //ADmin id cektik
+        int gondericiid;
         public AdminControl()
         {
             InitializeComponent();
@@ -23,7 +24,68 @@ namespace KargoOtomasyonu
         private void AdminControl_Load(object sender, EventArgs e)
         {
             adminbilgicek();
+            gondericicek();
             
+        }
+        private void tbtemizle()
+        {
+            tbgondericiad2.Text = "";
+            tbgondericisoyad2.Text = "";
+            tbgondericitc2.Text = "";
+            tbgondericitel2.Text = "";
+        }
+        private void gondericicek()
+        {
+            listviewgonderici.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri",baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void gondericisil()
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("delete from Musteri where ID=@p1",baglanti);
+            komut.Parameters.AddWithValue("@p1", gondericiid);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
+        }
+        private void gondericiduzenle()
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("update Musteri set Ad=@p1,Soyad=@p2,TC=@p3,Telefon=@p4 where ID=@p5",baglanti);
+            komut.Parameters.AddWithValue("@p1",tbgondericiad2.Text);
+            komut.Parameters.AddWithValue("@p2",tbgondericisoyad2.Text);
+            komut.Parameters.AddWithValue("@p3",tbgondericitc2.Text);
+            komut.Parameters.AddWithValue("@p4",tbgondericitel2.Text);
+            komut.Parameters.AddWithValue("@p5",gondericiid);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
+            
+           
+        }
+        private void gondericiekle()
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Musteri(Ad,Soyad,TC,Telefon) values(@p1,@p2,@p3,@p4)",baglanti);
+            komut.Parameters.AddWithValue("@p1",tbgondericiad2.Text);
+            komut.Parameters.AddWithValue("@p2",tbgondericisoyad2.Text);
+            komut.Parameters.AddWithValue("@p3",tbgondericitc2.Text);
+            komut.Parameters.AddWithValue("@p4",tbgondericitel2.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
         private void adminbilgicek()
         {
@@ -65,6 +127,65 @@ namespace KargoOtomasyonu
         }
 
         private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btngondericiekle_Click(object sender, EventArgs e)
+        {
+            if (tbgondericiad2.Text == "" || tbgondericisoyad2.Text == "" || tbgondericitel2.Text == "" || tbgondericitc2.Text == "")
+            {
+                MessageBox.Show("Bilgileri Boş bırakmayınız");
+            }
+            else
+            {
+                gondericiekle();
+                MessageBox.Show("Gönderici Ekleme Başarılı");
+                gondericicek();
+                tbtemizle();
+            }
+        }
+
+        private void btngondericiduzenle_Click(object sender, EventArgs e)
+        {
+            if (tbgondericiad2.Text == "" || tbgondericisoyad2.Text == "" || tbgondericitel2.Text == "" || tbgondericitc2.Text == "")
+            {
+                MessageBox.Show("Bilgileri Boş bırakmayınız");
+            }
+            else
+            {
+                gondericiduzenle();
+                MessageBox.Show("Gönderici Duzenleme Başarılı");
+                gondericicek();
+                tbtemizle();
+            }
+        }
+
+        private void listviewgonderici_Click(object sender, EventArgs e)
+        {
+            gondericiid = int.Parse(listviewgonderici.SelectedItems[0].SubItems[0].Text);
+            tbgondericiad2.Text=listviewgonderici.SelectedItems[0].SubItems[1].Text;
+            tbgondericisoyad2.Text = listviewgonderici.SelectedItems[0].SubItems[2].Text;
+            tbgondericitc2.Text = listviewgonderici.SelectedItems[0].SubItems[3].Text;
+            tbgondericitel2.Text = listviewgonderici.SelectedItems[0].SubItems[4].Text;
+        }
+
+        private void btngondericisil_Click(object sender, EventArgs e)
+        {
+            if (tbgondericiad2.Text == "" || tbgondericisoyad2.Text == "" || tbgondericitel2.Text == "" || tbgondericitc2.Text == "")
+            {
+                MessageBox.Show("Bilgileri Boş bırakmayınız");
+            }
+            else
+            {
+                gondericisil();
+                MessageBox.Show("Gönderici Silme Başarılı");
+                gondericicek();
+                tbtemizle();
+            }
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
         {
 
         }
