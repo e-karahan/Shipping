@@ -93,6 +93,12 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cbdurum = new System.Windows.Forms.ComboBox();
             this.cbhassas = new System.Windows.Forms.ComboBox();
+            this.tbara = new System.Windows.Forms.TextBox();
+            this.rbad = new System.Windows.Forms.RadioButton();
+            this.rbtc = new System.Windows.Forms.RadioButton();
+            this.rbtc2 = new System.Windows.Forms.RadioButton();
+            this.rbad2 = new System.Windows.Forms.RadioButton();
+            this.tbara2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -237,6 +243,9 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.rbtc2);
+            this.groupBox7.Controls.Add(this.rbad2);
+            this.groupBox7.Controls.Add(this.tbara2);
             this.groupBox7.Controls.Add(this.cbhassas);
             this.groupBox7.Controls.Add(this.cbdurum);
             this.groupBox7.Controls.Add(this.label1);
@@ -496,7 +505,7 @@
             this.listviewgonderici2.FullRowSelect = true;
             this.listviewgonderici2.Location = new System.Drawing.Point(383, 31);
             this.listviewgonderici2.Name = "listviewgonderici2";
-            this.listviewgonderici2.Size = new System.Drawing.Size(349, 370);
+            this.listviewgonderici2.Size = new System.Drawing.Size(349, 333);
             this.listviewgonderici2.TabIndex = 46;
             this.listviewgonderici2.UseCompatibleStateImageBehavior = false;
             this.listviewgonderici2.View = System.Windows.Forms.View.Details;
@@ -536,6 +545,9 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.rbtc);
+            this.tabPage4.Controls.Add(this.rbad);
+            this.tabPage4.Controls.Add(this.tbara);
             this.tabPage4.Controls.Add(this.listviewgonderici);
             this.tabPage4.Controls.Add(this.btngondericiekle);
             this.tabPage4.Controls.Add(this.btngondericisil);
@@ -719,6 +731,66 @@
             this.cbhassas.Size = new System.Drawing.Size(214, 21);
             this.cbhassas.TabIndex = 50;
             // 
+            // tbara
+            // 
+            this.tbara.Location = new System.Drawing.Point(527, 293);
+            this.tbara.Name = "tbara";
+            this.tbara.Size = new System.Drawing.Size(220, 20);
+            this.tbara.TabIndex = 52;
+            this.tbara.TextChanged += new System.EventHandler(this.tbara_TextChanged);
+            // 
+            // rbad
+            // 
+            this.rbad.AutoSize = true;
+            this.rbad.Location = new System.Drawing.Point(354, 293);
+            this.rbad.Name = "rbad";
+            this.rbad.Size = new System.Drawing.Size(76, 19);
+            this.rbad.TabIndex = 53;
+            this.rbad.TabStop = true;
+            this.rbad.Text = "Ada Göre";
+            this.rbad.UseVisualStyleBackColor = true;
+            // 
+            // rbtc
+            // 
+            this.rbtc.AutoSize = true;
+            this.rbtc.Location = new System.Drawing.Point(436, 293);
+            this.rbtc.Name = "rbtc";
+            this.rbtc.Size = new System.Drawing.Size(85, 19);
+            this.rbtc.TabIndex = 54;
+            this.rbtc.TabStop = true;
+            this.rbtc.Text = "TC\'ye Göre";
+            this.rbtc.UseVisualStyleBackColor = true;
+            // 
+            // rbtc2
+            // 
+            this.rbtc2.AutoSize = true;
+            this.rbtc2.Location = new System.Drawing.Point(466, 370);
+            this.rbtc2.Name = "rbtc2";
+            this.rbtc2.Size = new System.Drawing.Size(85, 19);
+            this.rbtc2.TabIndex = 57;
+            this.rbtc2.TabStop = true;
+            this.rbtc2.Text = "TC\'ye Göre";
+            this.rbtc2.UseVisualStyleBackColor = true;
+            // 
+            // rbad2
+            // 
+            this.rbad2.AutoSize = true;
+            this.rbad2.Location = new System.Drawing.Point(384, 370);
+            this.rbad2.Name = "rbad2";
+            this.rbad2.Size = new System.Drawing.Size(76, 19);
+            this.rbad2.TabIndex = 56;
+            this.rbad2.TabStop = true;
+            this.rbad2.Text = "Ada Göre";
+            this.rbad2.UseVisualStyleBackColor = true;
+            // 
+            // tbara2
+            // 
+            this.tbara2.Location = new System.Drawing.Point(557, 370);
+            this.tbara2.Name = "tbara2";
+            this.tbara2.Size = new System.Drawing.Size(175, 20);
+            this.tbara2.TabIndex = 55;
+            this.tbara2.TextChanged += new System.EventHandler(this.tbara2_TextChanged);
+            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -808,6 +880,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbdurum;
         private System.Windows.Forms.ComboBox cbhassas;
+        private System.Windows.Forms.TextBox tbara;
+        private System.Windows.Forms.RadioButton rbad;
+        private System.Windows.Forms.RadioButton rbtc;
+        private System.Windows.Forms.RadioButton rbtc2;
+        private System.Windows.Forms.RadioButton rbad2;
+        private System.Windows.Forms.TextBox tbara2;
 
     }
 }

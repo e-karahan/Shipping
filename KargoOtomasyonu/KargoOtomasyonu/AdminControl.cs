@@ -153,6 +153,78 @@ namespace KargoOtomasyonu
             komut.ExecuteNonQuery();
             baglanti.Close();        
         }
+        private void gondericiadcek()
+        {
+            listviewgonderici.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri where Ad like '%"+tbara.Text+"%'",baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void gondericiadcek2()
+        {
+            listviewgonderici2.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri where Ad like '%" + tbara2.Text + "%'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici2.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void gondericitccek2()
+        {
+            listviewgonderici2.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri where TC like '%" + tbara2.Text + "%'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici2.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void gondericitccek()
+        {
+            listviewgonderici.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from Musteri where TC like '%" + tbara.Text + "%'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Ad"].ToString());
+                Item.SubItems.Add(oku["Soyad"].ToString());
+                Item.SubItems.Add(oku["TC"].ToString());
+                Item.SubItems.Add(oku["Telefon"].ToString());
+                listviewgonderici.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
  
         private void btnkapat_Click(object sender, EventArgs e)
         {
@@ -262,6 +334,30 @@ namespace KargoOtomasyonu
         private void btnkargoduzenle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbara_TextChanged(object sender, EventArgs e)
+        {
+            if (rbad.Checked)
+            {
+                gondericiadcek();
+            }
+            else if(rbtc.Checked)
+            {
+                gondericitccek();
+            }
+        }
+
+        private void tbara2_TextChanged(object sender, EventArgs e)
+        {
+            if (rbad2.Checked)
+            {
+                gondericiadcek2();
+            }
+            else if (rbtc2.Checked)
+            {
+                gondericitccek2();
+            }
         }
     }
 }
