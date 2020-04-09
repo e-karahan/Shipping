@@ -18,3 +18,4 @@ C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyon
 C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.AdminControl.resources
 C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.Properties.Resources.resources
 C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.csproj.GenerateResource.Cache
+C:\Users\emirh\Shipping\KargoOtomasyonu\KargoOtomasyonu\obj\Debug\KargoOtomasyonu.KargoDuzenle.resources

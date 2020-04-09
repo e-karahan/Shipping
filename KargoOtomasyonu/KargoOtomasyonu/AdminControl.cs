@@ -359,5 +359,14 @@ namespace KargoOtomasyonu
                 gondericitccek2();
             }
         }
+
+        private void kargoduzenle_Click(object sender, EventArgs e)
+        {
+           
+                KargoDuzenle duzenle = new KargoDuzenle();
+                duzenle.Show();
+            
+            
+        }
     }
 }
