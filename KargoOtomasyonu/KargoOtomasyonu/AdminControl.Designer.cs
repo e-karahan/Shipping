@@ -100,24 +100,42 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbgondericiad2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.listalinan = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tbalinanara = new System.Windows.Forms.TextBox();
+            this.tbdagitimara = new System.Windows.Forms.TextBox();
+            this.tbteslimara = new System.Windows.Forms.TextBox();
+            this.btndagitim = new System.Windows.Forms.Button();
+            this.btnteslim = new System.Windows.Forms.Button();
+            this.btnarsiv = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblkargoid = new System.Windows.Forms.Label();
+            this.lblkargoid2 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblkargoid3 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listdagitim = new System.Windows.Forms.ListView();
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listteslim = new System.Windows.Forms.ListView();
+            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label11 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -142,24 +160,27 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.radioButton5);
-            this.tabPage1.Controls.Add(this.radioButton6);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.radioButton3);
-            this.tabPage1.Controls.Add(this.radioButton4);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.radioButton1);
-            this.tabPage1.Controls.Add(this.radioButton2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.label28);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.label11);
+            this.tabPage1.Controls.Add(this.listteslim);
+            this.tabPage1.Controls.Add(this.listdagitim);
+            this.tabPage1.Controls.Add(this.lblkargoid3);
+            this.tabPage1.Controls.Add(this.label29);
+            this.tabPage1.Controls.Add(this.lblkargoid2);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.lblkargoid);
+            this.tabPage1.Controls.Add(this.label10);
+            this.tabPage1.Controls.Add(this.btnarsiv);
+            this.tabPage1.Controls.Add(this.btnteslim);
+            this.tabPage1.Controls.Add(this.btndagitim);
+            this.tabPage1.Controls.Add(this.tbteslimara);
+            this.tabPage1.Controls.Add(this.tbdagitimara);
+            this.tabPage1.Controls.Add(this.tbalinanara);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.listView3);
-            this.tabPage1.Controls.Add(this.listView2);
-            this.tabPage1.Controls.Add(this.listView1);
+            this.tabPage1.Controls.Add(this.listalinan);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -174,7 +195,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(893, 444);
+            this.tabPage2.Size = new System.Drawing.Size(991, 444);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bilgilerim";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -840,29 +861,22 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Ad :";
             // 
-            // listView1
+            // listalinan
             // 
-            this.listView1.Location = new System.Drawing.Point(6, 42);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(314, 297);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView2
-            // 
-            this.listView2.Location = new System.Drawing.Point(339, 42);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(314, 297);
-            this.listView2.TabIndex = 2;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView3
-            // 
-            this.listView3.Location = new System.Drawing.Point(671, 42);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(314, 297);
-            this.listView3.TabIndex = 3;
-            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listalinan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.listalinan.FullRowSelect = true;
+            this.listalinan.Location = new System.Drawing.Point(6, 42);
+            this.listalinan.Name = "listalinan";
+            this.listalinan.Size = new System.Drawing.Size(314, 297);
+            this.listalinan.TabIndex = 1;
+            this.listalinan.UseCompatibleStateImageBehavior = false;
+            this.listalinan.View = System.Windows.Forms.View.Details;
+            this.listalinan.Click += new System.EventHandler(this.listalinan_Click);
             // 
             // label2
             // 
@@ -894,119 +908,250 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "Teslim Edilen Kargolar";
             // 
-            // radioButton1
+            // tbalinanara
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(81, 345);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(101, 19);
-            this.radioButton1.TabIndex = 60;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Barkoda Göre";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.tbalinanara.Location = new System.Drawing.Point(143, 346);
+            this.tbalinanara.Name = "tbalinanara";
+            this.tbalinanara.Size = new System.Drawing.Size(177, 20);
+            this.tbalinanara.TabIndex = 58;
+            this.tbalinanara.TextChanged += new System.EventHandler(this.tbalinanara_TextChanged);
             // 
-            // radioButton2
+            // tbdagitimara
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 345);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 19);
-            this.radioButton2.TabIndex = 59;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ada Göre";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.tbdagitimara.Location = new System.Drawing.Point(473, 343);
+            this.tbdagitimara.Name = "tbdagitimara";
+            this.tbdagitimara.Size = new System.Drawing.Size(180, 20);
+            this.tbdagitimara.TabIndex = 61;
+            this.tbdagitimara.TextChanged += new System.EventHandler(this.tbdagitimara_TextChanged);
             // 
-            // textBox1
+            // tbteslimara
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 344);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
-            this.textBox1.TabIndex = 58;
+            this.tbteslimara.Location = new System.Drawing.Point(808, 346);
+            this.tbteslimara.Name = "tbteslimara";
+            this.tbteslimara.Size = new System.Drawing.Size(177, 20);
+            this.tbteslimara.TabIndex = 64;
+            this.tbteslimara.TextChanged += new System.EventHandler(this.tbteslimara_TextChanged);
             // 
-            // radioButton3
+            // btndagitim
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(414, 344);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(101, 19);
-            this.radioButton3.TabIndex = 63;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Barkoda Göre";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.btndagitim.Location = new System.Drawing.Point(146, 396);
+            this.btndagitim.Name = "btndagitim";
+            this.btndagitim.Size = new System.Drawing.Size(174, 23);
+            this.btndagitim.TabIndex = 67;
+            this.btndagitim.Text = "Dağıtıma Aktar";
+            this.btndagitim.UseVisualStyleBackColor = true;
+            this.btndagitim.Click += new System.EventHandler(this.btndagitim_Click);
             // 
-            // radioButton4
+            // btnteslim
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(339, 344);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(76, 19);
-            this.radioButton4.TabIndex = 62;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Ada Göre";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.btnteslim.Location = new System.Drawing.Point(473, 396);
+            this.btnteslim.Name = "btnteslim";
+            this.btnteslim.Size = new System.Drawing.Size(180, 23);
+            this.btnteslim.TabIndex = 68;
+            this.btnteslim.Text = "Teslim Edilene Aktar";
+            this.btnteslim.UseVisualStyleBackColor = true;
+            this.btnteslim.Click += new System.EventHandler(this.btnteslim_Click);
             // 
-            // textBox2
+            // btnarsiv
             // 
-            this.textBox2.Location = new System.Drawing.Point(521, 343);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 20);
-            this.textBox2.TabIndex = 61;
+            this.btnarsiv.Location = new System.Drawing.Point(808, 396);
+            this.btnarsiv.Name = "btnarsiv";
+            this.btnarsiv.Size = new System.Drawing.Size(177, 23);
+            this.btnarsiv.TabIndex = 69;
+            this.btnarsiv.Text = "Kargoya Arşive Kaldır";
+            this.btnarsiv.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // label10
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(746, 343);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(101, 19);
-            this.radioButton5.TabIndex = 66;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Barkoda Göre";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(16, 376);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 17);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "Seçilen Kargo ID :";
             // 
-            // radioButton6
+            // lblkargoid
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(671, 343);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(76, 19);
-            this.radioButton6.TabIndex = 65;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Ada Göre";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.lblkargoid.AutoSize = true;
+            this.lblkargoid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid.Location = new System.Drawing.Point(143, 376);
+            this.lblkargoid.Name = "lblkargoid";
+            this.lblkargoid.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid.TabIndex = 71;
+            this.lblkargoid.Text = "00";
             // 
-            // textBox3
+            // lblkargoid2
             // 
-            this.textBox3.Location = new System.Drawing.Point(853, 342);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 20);
-            this.textBox3.TabIndex = 64;
+            this.lblkargoid2.AutoSize = true;
+            this.lblkargoid2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid2.Location = new System.Drawing.Point(470, 376);
+            this.lblkargoid2.Name = "lblkargoid2";
+            this.lblkargoid2.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid2.TabIndex = 73;
+            this.lblkargoid2.Text = "00";
             // 
-            // button1
+            // label27
             // 
-            this.button1.Location = new System.Drawing.Point(188, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 23);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "Dağıtıma Aktar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label27.Location = new System.Drawing.Point(336, 376);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(121, 17);
+            this.label27.TabIndex = 72;
+            this.label27.Text = "Seçilen Kargo ID :";
             // 
-            // button2
+            // lblkargoid3
             // 
-            this.button2.Location = new System.Drawing.Point(521, 369);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 23);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "Teslim Edilene Aktar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lblkargoid3.AutoSize = true;
+            this.lblkargoid3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid3.Location = new System.Drawing.Point(805, 376);
+            this.lblkargoid3.Name = "lblkargoid3";
+            this.lblkargoid3.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid3.TabIndex = 75;
+            this.lblkargoid3.Text = "00";
             // 
-            // button3
+            // label29
             // 
-            this.button3.Location = new System.Drawing.Point(853, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 23);
-            this.button3.TabIndex = 69;
-            this.button3.Text = "Kargoya Arşive Kaldır";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(678, 376);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(121, 17);
+            this.label29.TabIndex = 74;
+            this.label29.Text = "Seçilen Kargo ID :";
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Kargo ID";
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Barkod";
+            this.columnHeader12.Width = 65;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Alıcı Adı";
+            this.columnHeader13.Width = 59;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Alıcı Adres";
+            this.columnHeader14.Width = 66;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "İçerik";
+            // 
+            // listdagitim
+            // 
+            this.listdagitim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18,
+            this.columnHeader19,
+            this.columnHeader20});
+            this.listdagitim.FullRowSelect = true;
+            this.listdagitim.Location = new System.Drawing.Point(339, 41);
+            this.listdagitim.Name = "listdagitim";
+            this.listdagitim.Size = new System.Drawing.Size(314, 297);
+            this.listdagitim.TabIndex = 76;
+            this.listdagitim.UseCompatibleStateImageBehavior = false;
+            this.listdagitim.View = System.Windows.Forms.View.Details;
+            this.listdagitim.Click += new System.EventHandler(this.listdagitim_Click);
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Kargo ID";
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Barkod";
+            this.columnHeader17.Width = 57;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Alıcı Adı";
+            this.columnHeader18.Width = 64;
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Alıcı Adres";
+            this.columnHeader19.Width = 67;
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "İçerik";
+            // 
+            // listteslim
+            // 
+            this.listteslim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader21,
+            this.columnHeader22,
+            this.columnHeader23,
+            this.columnHeader24,
+            this.columnHeader25});
+            this.listteslim.FullRowSelect = true;
+            this.listteslim.Location = new System.Drawing.Point(671, 42);
+            this.listteslim.Name = "listteslim";
+            this.listteslim.Size = new System.Drawing.Size(314, 297);
+            this.listteslim.TabIndex = 77;
+            this.listteslim.UseCompatibleStateImageBehavior = false;
+            this.listteslim.View = System.Windows.Forms.View.Details;
+            this.listteslim.Click += new System.EventHandler(this.listteslim_Click);
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "Kargo ID";
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "Barkod";
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Text = "Alıcı Adı";
+            this.columnHeader23.Width = 65;
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Alıcı Adres";
+            this.columnHeader24.Width = 65;
+            // 
+            // columnHeader25
+            // 
+            this.columnHeader25.Text = "İçerik";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(6, 346);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 17);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Barkoda Göre Ara :";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(336, 346);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(131, 17);
+            this.label26.TabIndex = 79;
+            this.label26.Text = "Barkoda Göre Ara :";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(668, 346);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(131, 17);
+            this.label28.TabIndex = 80;
+            this.label28.Text = "Barkoda Göre Ara :";
             // 
             // AdminControl
             // 
@@ -1106,24 +1251,42 @@
         private System.Windows.Forms.RadioButton rbad2;
         private System.Windows.Forms.TextBox tbara2;
         private System.Windows.Forms.Button kargoduzenle;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbalinanara;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ListView listalinan;
+        private System.Windows.Forms.Button btnarsiv;
+        private System.Windows.Forms.Button btnteslim;
+        private System.Windows.Forms.Button btndagitim;
+        private System.Windows.Forms.TextBox tbteslimara;
+        private System.Windows.Forms.TextBox tbdagitimara;
+        private System.Windows.Forms.ListView listteslim;
+        private System.Windows.Forms.ColumnHeader columnHeader21;
+        private System.Windows.Forms.ColumnHeader columnHeader22;
+        private System.Windows.Forms.ColumnHeader columnHeader23;
+        private System.Windows.Forms.ColumnHeader columnHeader24;
+        private System.Windows.Forms.ColumnHeader columnHeader25;
+        private System.Windows.Forms.ListView listdagitim;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.ColumnHeader columnHeader19;
+        private System.Windows.Forms.ColumnHeader columnHeader20;
+        private System.Windows.Forms.Label lblkargoid3;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblkargoid2;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblkargoid;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label26;
 
     }
 }

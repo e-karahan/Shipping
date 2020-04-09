@@ -26,6 +26,9 @@ namespace KargoOtomasyonu
             adminbilgicek();
             gondericicek();
             gondericicek2();
+            teslimalinan();
+            teslimedilen();
+            dagitimacikan();
             
         }
         private void tbtemizle()
@@ -207,6 +210,60 @@ namespace KargoOtomasyonu
             }
             baglanti.Close();
         }
+        private void teslimedilen()
+        {
+            listteslim.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Durum='Teslim Edildi'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listteslim.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void dagitimacikan()
+        {
+            listdagitim.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Durum='Dağıtıma Çıktı'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listdagitim.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void teslimalinan()
+        {
+            listalinan.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Durum='Teslim Alındı'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listalinan.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
         private void gondericitccek()
         {
             listviewgonderici.Items.Clear();
@@ -222,6 +279,60 @@ namespace KargoOtomasyonu
                 Item.SubItems.Add(oku["TC"].ToString());
                 Item.SubItems.Add(oku["Telefon"].ToString());
                 listviewgonderici.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void teslimalinanara()
+        {
+            listalinan.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Barkod like '%" + tbalinanara.Text + "%' and Durum='Teslim Alındı'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listalinan.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void dagitamacikanara()
+        {
+            listdagitim.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Barkod like '%" + tbdagitimara.Text + "%' and Durum='Dağıtıma Çıktı'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listdagitim.Items.Add(Item);
+            }
+            baglanti.Close();
+        }
+        private void teslimedilenara()
+        {
+            listteslim.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KargoBilgi where Barkod like '%" + tbteslimara.Text + "%' and Durum='Teslim Edildi'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                ListViewItem Item = new ListViewItem();
+                Item.Text = oku["ID"].ToString();
+                Item.SubItems.Add(oku["Barkod"].ToString());
+                Item.SubItems.Add(oku["Alici_Ad"].ToString());
+                Item.SubItems.Add(oku["Alici_Adres"].ToString());
+                Item.SubItems.Add(oku["Icerik"].ToString());
+                listteslim.Items.Add(Item);
             }
             baglanti.Close();
         }
@@ -367,6 +478,79 @@ namespace KargoOtomasyonu
                 duzenle.Show();
 
 
+        }
+
+        private void listalinan_Click(object sender, EventArgs e)
+        {
+            
+            lblkargoid.Text = listalinan.SelectedItems[0].SubItems[0].Text;
+        }
+
+        private void listdagitim_Click(object sender, EventArgs e)
+        {
+            lblkargoid2.Text = listdagitim.SelectedItems[0].SubItems[0].Text;
+        }
+
+        private void listteslim_Click(object sender, EventArgs e)
+        {
+            lblkargoid3.Text = listteslim.SelectedItems[0].SubItems[0].Text;
+        }
+
+        private void tbalinanara_TextChanged(object sender, EventArgs e)
+        {
+            teslimalinanara();
+        }
+
+        private void tbdagitimara_TextChanged(object sender, EventArgs e)
+        {
+            dagitamacikanara();
+        }
+
+        private void tbteslimara_TextChanged(object sender, EventArgs e)
+        {
+            teslimedilenara();
+        }
+
+        private void btndagitim_Click(object sender, EventArgs e)
+        {
+            if (lblkargoid.Text == "00")
+            {
+                MessageBox.Show("Lütfen Listeden Seçim Yapınız");
+            }
+            else
+            {
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("update KargoBilgi set Durum='Dağıtıma Çıktı' where ID=@p1", baglanti);
+                komut.Parameters.AddWithValue("@p1", lblkargoid.Text);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                teslimedilen();
+                teslimalinan();
+                dagitimacikan();
+            }
+           
+            
+
+        }
+
+        private void btnteslim_Click(object sender, EventArgs e)
+        {
+            if (lblkargoid2.Text == "00")
+            {
+                MessageBox.Show("Lütfen Listeden Seçim Yapınız");
+            }
+            else
+            {
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("update KargoBilgi set Durum='Teslim Edildi' where ID=@p1", baglanti);
+                komut.Parameters.AddWithValue("@p1", lblkargoid2.Text);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                teslimedilen();
+                teslimalinan();
+                dagitimacikan();
+            }
+           
         }
     }
 }
