@@ -365,8 +365,8 @@ namespace KargoOtomasyonu
            
                 KargoDuzenle duzenle = new KargoDuzenle();
                 duzenle.Show();
-            
-            
+
+
         }
     }
 }

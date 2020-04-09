@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.kargoduzenle = new System.Windows.Forms.Button();
             this.rbtc2 = new System.Windows.Forms.RadioButton();
             this.rbad2 = new System.Windows.Forms.RadioButton();
             this.tbara2 = new System.Windows.Forms.TextBox();
@@ -99,8 +100,26 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbgondericiad2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.kargoduzenle = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -118,15 +137,33 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(770, 470);
+            this.tabControl1.Size = new System.Drawing.Size(999, 470);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.radioButton5);
+            this.tabPage1.Controls.Add(this.radioButton6);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.radioButton3);
+            this.tabPage1.Controls.Add(this.radioButton4);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.radioButton1);
+            this.tabPage1.Controls.Add(this.radioButton2);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.listView3);
+            this.tabPage1.Controls.Add(this.listView2);
+            this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(762, 444);
+            this.tabPage1.Size = new System.Drawing.Size(991, 444);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "AnaSayfa";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -137,7 +174,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(762, 444);
+            this.tabPage2.Size = new System.Drawing.Size(893, 444);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bilgilerim";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -237,7 +274,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(762, 444);
+            this.tabPage3.Size = new System.Drawing.Size(991, 444);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Kargo İşlemleri";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -282,6 +319,16 @@
             this.groupBox7.TabIndex = 10;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Kargo Bilgileri";
+            // 
+            // kargoduzenle
+            // 
+            this.kargoduzenle.Location = new System.Drawing.Point(148, 399);
+            this.kargoduzenle.Name = "kargoduzenle";
+            this.kargoduzenle.Size = new System.Drawing.Size(214, 23);
+            this.kargoduzenle.TabIndex = 58;
+            this.kargoduzenle.Text = "Kargo Bilgileri Düzenle";
+            this.kargoduzenle.UseVisualStyleBackColor = true;
+            this.kargoduzenle.Click += new System.EventHandler(this.kargoduzenle_Click);
             // 
             // rbtc2
             // 
@@ -618,7 +665,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(762, 444);
+            this.tabPage4.Size = new System.Drawing.Size(991, 444);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Gönderici İşlemleri";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -793,26 +840,186 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Ad :";
             // 
-            // kargoduzenle
+            // listView1
             // 
-            this.kargoduzenle.Location = new System.Drawing.Point(148, 399);
-            this.kargoduzenle.Name = "kargoduzenle";
-            this.kargoduzenle.Size = new System.Drawing.Size(214, 23);
-            this.kargoduzenle.TabIndex = 58;
-            this.kargoduzenle.Text = "Kargo Bilgileri Düzenle";
-            this.kargoduzenle.UseVisualStyleBackColor = true;
-            this.kargoduzenle.Click += new System.EventHandler(this.kargoduzenle_Click);
+            this.listView1.Location = new System.Drawing.Point(6, 42);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(314, 297);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // listView2
+            // 
+            this.listView2.Location = new System.Drawing.Point(339, 42);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(314, 297);
+            this.listView2.TabIndex = 2;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // listView3
+            // 
+            this.listView3.Location = new System.Drawing.Point(671, 42);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(314, 297);
+            this.listView3.TabIndex = 3;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(77, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Teslim Alınan Kargolar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(401, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Dağıtıma Çıkan Kargolar";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(754, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 20);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Teslim Edilen Kargolar";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(81, 345);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(101, 19);
+            this.radioButton1.TabIndex = 60;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Barkoda Göre";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 345);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(76, 19);
+            this.radioButton2.TabIndex = 59;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Ada Göre";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(188, 344);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 20);
+            this.textBox1.TabIndex = 58;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(414, 344);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(101, 19);
+            this.radioButton3.TabIndex = 63;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Barkoda Göre";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(339, 344);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(76, 19);
+            this.radioButton4.TabIndex = 62;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Ada Göre";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(521, 343);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(132, 20);
+            this.textBox2.TabIndex = 61;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(746, 343);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(101, 19);
+            this.radioButton5.TabIndex = 66;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Barkoda Göre";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(671, 343);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(76, 19);
+            this.radioButton6.TabIndex = 65;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Ada Göre";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(853, 342);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(132, 20);
+            this.textBox3.TabIndex = 64;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(188, 370);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 23);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "Dağıtıma Aktar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(521, 369);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 23);
+            this.button2.TabIndex = 68;
+            this.button2.Text = "Teslim Edilene Aktar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(853, 370);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 23);
+            this.button3.TabIndex = 69;
+            this.button3.Text = "Kargoya Arşive Kaldır";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 491);
+            this.ClientSize = new System.Drawing.Size(1023, 491);
             this.Controls.Add(this.tabControl1);
             this.Name = "AdminControl";
             this.Text = "AdminControl";
             this.Load += new System.EventHandler(this.AdminControl_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
@@ -899,6 +1106,24 @@
         private System.Windows.Forms.RadioButton rbad2;
         private System.Windows.Forms.TextBox tbara2;
         private System.Windows.Forms.Button kargoduzenle;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.TextBox textBox2;
 
     }
 }
