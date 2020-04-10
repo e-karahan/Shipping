@@ -552,5 +552,10 @@ namespace KargoOtomasyonu
             }
            
         }
+
+        private void listalinan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

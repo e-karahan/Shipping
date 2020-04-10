@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listduzenle = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -66,6 +66,10 @@
             this.tbalicitel = new System.Windows.Forms.TextBox();
             this.tbaliciadres = new System.Windows.Forms.TextBox();
             this.gbgonderici = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbkargoid2 = new System.Windows.Forms.TextBox();
+            this.tbgondericiid = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btngondericiekle = new System.Windows.Forms.Button();
             this.tbgondericisoyad2 = new System.Windows.Forms.TextBox();
             this.tbgondericitc2 = new System.Windows.Forms.TextBox();
@@ -81,17 +85,13 @@
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbgonderici.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // listduzenle
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listduzenle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
@@ -107,18 +107,19 @@
             this.columnHeader13,
             this.columnHeader14,
             this.columnHeader15});
-            this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1238, 255);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listduzenle.FullRowSelect = true;
+            this.listduzenle.Location = new System.Drawing.Point(12, 12);
+            this.listduzenle.Name = "listduzenle";
+            this.listduzenle.Size = new System.Drawing.Size(1238, 255);
+            this.listduzenle.TabIndex = 0;
+            this.listduzenle.UseCompatibleStateImageBehavior = false;
+            this.listduzenle.View = System.Windows.Forms.View.Details;
+            this.listduzenle.SelectedIndexChanged += new System.EventHandler(this.listduzenle_SelectedIndexChanged);
+            this.listduzenle.Click += new System.EventHandler(this.listduzenle_Click);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Müşteri ID";
-            this.columnHeader1.Width = 63;
             // 
             // columnHeader2
             // 
@@ -236,6 +237,7 @@
             this.button1.TabIndex = 77;
             this.button1.Text = "Kargo Bilgileri Düzenle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cbhassas
             // 
@@ -403,8 +405,8 @@
             // gbgonderici
             // 
             this.gbgonderici.Controls.Add(this.label3);
-            this.gbgonderici.Controls.Add(this.textBox2);
-            this.gbgonderici.Controls.Add(this.textBox1);
+            this.gbgonderici.Controls.Add(this.tbkargoid2);
+            this.gbgonderici.Controls.Add(this.tbgondericiid);
             this.gbgonderici.Controls.Add(this.label2);
             this.gbgonderici.Controls.Add(this.btngondericiekle);
             this.gbgonderici.Controls.Add(this.tbgondericisoyad2);
@@ -424,6 +426,42 @@
             this.gbgonderici.Text = "Gönderici Bilgileri";
             this.gbgonderici.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(15, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 18);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "Kargo ID :";
+            // 
+            // tbkargoid2
+            // 
+            this.tbkargoid2.Enabled = false;
+            this.tbkargoid2.Location = new System.Drawing.Point(95, 27);
+            this.tbkargoid2.Name = "tbkargoid2";
+            this.tbkargoid2.Size = new System.Drawing.Size(248, 20);
+            this.tbkargoid2.TabIndex = 64;
+            // 
+            // tbgondericiid
+            // 
+            this.tbgondericiid.Enabled = false;
+            this.tbgondericiid.Location = new System.Drawing.Point(95, 53);
+            this.tbgondericiid.Name = "tbgondericiid";
+            this.tbgondericiid.Size = new System.Drawing.Size(248, 20);
+            this.tbgondericiid.TabIndex = 62;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(59, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 18);
+            this.label2.TabIndex = 61;
+            this.label2.Text = "ID :";
+            // 
             // btngondericiekle
             // 
             this.btngondericiekle.Location = new System.Drawing.Point(95, 183);
@@ -432,9 +470,11 @@
             this.btngondericiekle.TabIndex = 60;
             this.btngondericiekle.Text = "Gönderici Ekle";
             this.btngondericiekle.UseVisualStyleBackColor = true;
+            this.btngondericiekle.Click += new System.EventHandler(this.btngondericiekle_Click);
             // 
             // tbgondericisoyad2
             // 
+            this.tbgondericisoyad2.Enabled = false;
             this.tbgondericisoyad2.Location = new System.Drawing.Point(95, 104);
             this.tbgondericisoyad2.Name = "tbgondericisoyad2";
             this.tbgondericisoyad2.Size = new System.Drawing.Size(248, 20);
@@ -442,6 +482,7 @@
             // 
             // tbgondericitc2
             // 
+            this.tbgondericitc2.Enabled = false;
             this.tbgondericitc2.Location = new System.Drawing.Point(95, 131);
             this.tbgondericitc2.Name = "tbgondericitc2";
             this.tbgondericitc2.Size = new System.Drawing.Size(248, 20);
@@ -449,6 +490,7 @@
             // 
             // tbgondericitel2
             // 
+            this.tbgondericitel2.Enabled = false;
             this.tbgondericitel2.Location = new System.Drawing.Point(95, 157);
             this.tbgondericitel2.Name = "tbgondericitel2";
             this.tbgondericitel2.Size = new System.Drawing.Size(248, 20);
@@ -486,6 +528,7 @@
             // 
             // tbgondericiad2
             // 
+            this.tbgondericiad2.Enabled = false;
             this.tbgondericiad2.Location = new System.Drawing.Point(95, 81);
             this.tbgondericiad2.Name = "tbgondericiad2";
             this.tbgondericiad2.Size = new System.Drawing.Size(248, 20);
@@ -516,6 +559,8 @@
             this.listviewgonderici.TabIndex = 50;
             this.listviewgonderici.UseCompatibleStateImageBehavior = false;
             this.listviewgonderici.View = System.Windows.Forms.View.Details;
+            this.listviewgonderici.SelectedIndexChanged += new System.EventHandler(this.listviewgonderici_SelectedIndexChanged);
+            this.listviewgonderici.Click += new System.EventHandler(this.listviewgonderici_Click);
             // 
             // columnHeader16
             // 
@@ -542,41 +587,6 @@
             this.columnHeader20.Text = "Telefon";
             this.columnHeader20.Width = 79;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(95, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 20);
-            this.textBox1.TabIndex = 62;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(59, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 18);
-            this.label2.TabIndex = 61;
-            this.label2.Text = "ID :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(15, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 18);
-            this.label3.TabIndex = 63;
-            this.label3.Text = "Kargo ID :";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(95, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(248, 20);
-            this.textBox2.TabIndex = 64;
-            // 
             // KargoDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -584,9 +594,10 @@
             this.ClientSize = new System.Drawing.Size(1262, 660);
             this.Controls.Add(this.gbgonderici);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listduzenle);
             this.Name = "KargoDuzenle";
             this.Text = "KargoDuzenle";
+            this.Load += new System.EventHandler(this.KargoDuzenle_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbgonderici.ResumeLayout(false);
@@ -597,8 +608,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ListView listduzenle;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
@@ -651,8 +661,9 @@
         private System.Windows.Forms.TextBox tbgondericiad2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbkargoid2;
+        private System.Windows.Forms.TextBox tbgondericiid;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

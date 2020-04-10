@@ -30,6 +30,42 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.listteslim = new System.Windows.Forms.ListView();
+            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listdagitim = new System.Windows.Forms.ListView();
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblkargoid3 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lblkargoid2 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblkargoid = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnarsiv = new System.Windows.Forms.Button();
+            this.btnteslim = new System.Windows.Forms.Button();
+            this.btndagitim = new System.Windows.Forms.Button();
+            this.tbteslimara = new System.Windows.Forms.TextBox();
+            this.tbdagitimara = new System.Windows.Forms.TextBox();
+            this.tbalinanara = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listalinan = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.btnkapat = new System.Windows.Forms.Button();
@@ -100,42 +136,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbgondericiad2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.listalinan = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbalinanara = new System.Windows.Forms.TextBox();
-            this.tbdagitimara = new System.Windows.Forms.TextBox();
-            this.tbteslimara = new System.Windows.Forms.TextBox();
-            this.btndagitim = new System.Windows.Forms.Button();
-            this.btnteslim = new System.Windows.Forms.Button();
-            this.btnarsiv = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblkargoid = new System.Windows.Forms.Label();
-            this.lblkargoid2 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.lblkargoid3 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listdagitim = new System.Windows.Forms.ListView();
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listteslim = new System.Windows.Forms.ListView();
-            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label11 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -188,6 +188,299 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "AnaSayfa";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(668, 346);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(131, 17);
+            this.label28.TabIndex = 80;
+            this.label28.Text = "Barkoda Göre Ara :";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(336, 346);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(131, 17);
+            this.label26.TabIndex = 79;
+            this.label26.Text = "Barkoda Göre Ara :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(6, 346);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 17);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Barkoda Göre Ara :";
+            // 
+            // listteslim
+            // 
+            this.listteslim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader21,
+            this.columnHeader22,
+            this.columnHeader23,
+            this.columnHeader24,
+            this.columnHeader25});
+            this.listteslim.FullRowSelect = true;
+            this.listteslim.Location = new System.Drawing.Point(671, 42);
+            this.listteslim.Name = "listteslim";
+            this.listteslim.Size = new System.Drawing.Size(314, 297);
+            this.listteslim.TabIndex = 77;
+            this.listteslim.UseCompatibleStateImageBehavior = false;
+            this.listteslim.View = System.Windows.Forms.View.Details;
+            this.listteslim.Click += new System.EventHandler(this.listteslim_Click);
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "Kargo ID";
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "Barkod";
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Text = "Alıcı Adı";
+            this.columnHeader23.Width = 65;
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Alıcı Adres";
+            this.columnHeader24.Width = 65;
+            // 
+            // columnHeader25
+            // 
+            this.columnHeader25.Text = "İçerik";
+            // 
+            // listdagitim
+            // 
+            this.listdagitim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18,
+            this.columnHeader19,
+            this.columnHeader20});
+            this.listdagitim.FullRowSelect = true;
+            this.listdagitim.Location = new System.Drawing.Point(339, 41);
+            this.listdagitim.Name = "listdagitim";
+            this.listdagitim.Size = new System.Drawing.Size(314, 297);
+            this.listdagitim.TabIndex = 76;
+            this.listdagitim.UseCompatibleStateImageBehavior = false;
+            this.listdagitim.View = System.Windows.Forms.View.Details;
+            this.listdagitim.Click += new System.EventHandler(this.listdagitim_Click);
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Kargo ID";
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Barkod";
+            this.columnHeader17.Width = 57;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Alıcı Adı";
+            this.columnHeader18.Width = 64;
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Alıcı Adres";
+            this.columnHeader19.Width = 67;
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "İçerik";
+            // 
+            // lblkargoid3
+            // 
+            this.lblkargoid3.AutoSize = true;
+            this.lblkargoid3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid3.Location = new System.Drawing.Point(805, 376);
+            this.lblkargoid3.Name = "lblkargoid3";
+            this.lblkargoid3.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid3.TabIndex = 75;
+            this.lblkargoid3.Text = "00";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(678, 376);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(121, 17);
+            this.label29.TabIndex = 74;
+            this.label29.Text = "Seçilen Kargo ID :";
+            // 
+            // lblkargoid2
+            // 
+            this.lblkargoid2.AutoSize = true;
+            this.lblkargoid2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid2.Location = new System.Drawing.Point(470, 376);
+            this.lblkargoid2.Name = "lblkargoid2";
+            this.lblkargoid2.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid2.TabIndex = 73;
+            this.lblkargoid2.Text = "00";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label27.Location = new System.Drawing.Point(336, 376);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(121, 17);
+            this.label27.TabIndex = 72;
+            this.label27.Text = "Seçilen Kargo ID :";
+            // 
+            // lblkargoid
+            // 
+            this.lblkargoid.AutoSize = true;
+            this.lblkargoid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkargoid.Location = new System.Drawing.Point(143, 376);
+            this.lblkargoid.Name = "lblkargoid";
+            this.lblkargoid.Size = new System.Drawing.Size(24, 17);
+            this.lblkargoid.TabIndex = 71;
+            this.lblkargoid.Text = "00";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(16, 376);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 17);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "Seçilen Kargo ID :";
+            // 
+            // btnarsiv
+            // 
+            this.btnarsiv.Location = new System.Drawing.Point(808, 396);
+            this.btnarsiv.Name = "btnarsiv";
+            this.btnarsiv.Size = new System.Drawing.Size(177, 23);
+            this.btnarsiv.TabIndex = 69;
+            this.btnarsiv.Text = "Kargoya Arşive Kaldır";
+            this.btnarsiv.UseVisualStyleBackColor = true;
+            // 
+            // btnteslim
+            // 
+            this.btnteslim.Location = new System.Drawing.Point(473, 396);
+            this.btnteslim.Name = "btnteslim";
+            this.btnteslim.Size = new System.Drawing.Size(180, 23);
+            this.btnteslim.TabIndex = 68;
+            this.btnteslim.Text = "Teslim Edilene Aktar";
+            this.btnteslim.UseVisualStyleBackColor = true;
+            this.btnteslim.Click += new System.EventHandler(this.btnteslim_Click);
+            // 
+            // btndagitim
+            // 
+            this.btndagitim.Location = new System.Drawing.Point(146, 396);
+            this.btndagitim.Name = "btndagitim";
+            this.btndagitim.Size = new System.Drawing.Size(174, 23);
+            this.btndagitim.TabIndex = 67;
+            this.btndagitim.Text = "Dağıtıma Aktar";
+            this.btndagitim.UseVisualStyleBackColor = true;
+            this.btndagitim.Click += new System.EventHandler(this.btndagitim_Click);
+            // 
+            // tbteslimara
+            // 
+            this.tbteslimara.Location = new System.Drawing.Point(808, 346);
+            this.tbteslimara.Name = "tbteslimara";
+            this.tbteslimara.Size = new System.Drawing.Size(177, 20);
+            this.tbteslimara.TabIndex = 64;
+            this.tbteslimara.TextChanged += new System.EventHandler(this.tbteslimara_TextChanged);
+            // 
+            // tbdagitimara
+            // 
+            this.tbdagitimara.Location = new System.Drawing.Point(473, 343);
+            this.tbdagitimara.Name = "tbdagitimara";
+            this.tbdagitimara.Size = new System.Drawing.Size(180, 20);
+            this.tbdagitimara.TabIndex = 61;
+            this.tbdagitimara.TextChanged += new System.EventHandler(this.tbdagitimara_TextChanged);
+            // 
+            // tbalinanara
+            // 
+            this.tbalinanara.Location = new System.Drawing.Point(143, 346);
+            this.tbalinanara.Name = "tbalinanara";
+            this.tbalinanara.Size = new System.Drawing.Size(177, 20);
+            this.tbalinanara.TabIndex = 58;
+            this.tbalinanara.TextChanged += new System.EventHandler(this.tbalinanara_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(754, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 20);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Teslim Edilen Kargolar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(401, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Dağıtıma Çıkan Kargolar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(77, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Teslim Alınan Kargolar";
+            // 
+            // listalinan
+            // 
+            this.listalinan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.listalinan.FullRowSelect = true;
+            this.listalinan.Location = new System.Drawing.Point(6, 42);
+            this.listalinan.Name = "listalinan";
+            this.listalinan.Size = new System.Drawing.Size(314, 297);
+            this.listalinan.TabIndex = 1;
+            this.listalinan.UseCompatibleStateImageBehavior = false;
+            this.listalinan.View = System.Windows.Forms.View.Details;
+            this.listalinan.SelectedIndexChanged += new System.EventHandler(this.listalinan_SelectedIndexChanged);
+            this.listalinan.Click += new System.EventHandler(this.listalinan_Click);
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Kargo ID";
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Barkod";
+            this.columnHeader12.Width = 65;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Alıcı Adı";
+            this.columnHeader13.Width = 59;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Alıcı Adres";
+            this.columnHeader14.Width = 66;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "İçerik";
             // 
             // tabPage2
             // 
@@ -860,298 +1153,6 @@
             this.label8.Size = new System.Drawing.Size(33, 18);
             this.label8.TabIndex = 31;
             this.label8.Text = "Ad :";
-            // 
-            // listalinan
-            // 
-            this.listalinan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            this.listalinan.FullRowSelect = true;
-            this.listalinan.Location = new System.Drawing.Point(6, 42);
-            this.listalinan.Name = "listalinan";
-            this.listalinan.Size = new System.Drawing.Size(314, 297);
-            this.listalinan.TabIndex = 1;
-            this.listalinan.UseCompatibleStateImageBehavior = false;
-            this.listalinan.View = System.Windows.Forms.View.Details;
-            this.listalinan.Click += new System.EventHandler(this.listalinan_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(77, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Teslim Alınan Kargolar";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(401, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Dağıtıma Çıkan Kargolar";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(754, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Teslim Edilen Kargolar";
-            // 
-            // tbalinanara
-            // 
-            this.tbalinanara.Location = new System.Drawing.Point(143, 346);
-            this.tbalinanara.Name = "tbalinanara";
-            this.tbalinanara.Size = new System.Drawing.Size(177, 20);
-            this.tbalinanara.TabIndex = 58;
-            this.tbalinanara.TextChanged += new System.EventHandler(this.tbalinanara_TextChanged);
-            // 
-            // tbdagitimara
-            // 
-            this.tbdagitimara.Location = new System.Drawing.Point(473, 343);
-            this.tbdagitimara.Name = "tbdagitimara";
-            this.tbdagitimara.Size = new System.Drawing.Size(180, 20);
-            this.tbdagitimara.TabIndex = 61;
-            this.tbdagitimara.TextChanged += new System.EventHandler(this.tbdagitimara_TextChanged);
-            // 
-            // tbteslimara
-            // 
-            this.tbteslimara.Location = new System.Drawing.Point(808, 346);
-            this.tbteslimara.Name = "tbteslimara";
-            this.tbteslimara.Size = new System.Drawing.Size(177, 20);
-            this.tbteslimara.TabIndex = 64;
-            this.tbteslimara.TextChanged += new System.EventHandler(this.tbteslimara_TextChanged);
-            // 
-            // btndagitim
-            // 
-            this.btndagitim.Location = new System.Drawing.Point(146, 396);
-            this.btndagitim.Name = "btndagitim";
-            this.btndagitim.Size = new System.Drawing.Size(174, 23);
-            this.btndagitim.TabIndex = 67;
-            this.btndagitim.Text = "Dağıtıma Aktar";
-            this.btndagitim.UseVisualStyleBackColor = true;
-            this.btndagitim.Click += new System.EventHandler(this.btndagitim_Click);
-            // 
-            // btnteslim
-            // 
-            this.btnteslim.Location = new System.Drawing.Point(473, 396);
-            this.btnteslim.Name = "btnteslim";
-            this.btnteslim.Size = new System.Drawing.Size(180, 23);
-            this.btnteslim.TabIndex = 68;
-            this.btnteslim.Text = "Teslim Edilene Aktar";
-            this.btnteslim.UseVisualStyleBackColor = true;
-            this.btnteslim.Click += new System.EventHandler(this.btnteslim_Click);
-            // 
-            // btnarsiv
-            // 
-            this.btnarsiv.Location = new System.Drawing.Point(808, 396);
-            this.btnarsiv.Name = "btnarsiv";
-            this.btnarsiv.Size = new System.Drawing.Size(177, 23);
-            this.btnarsiv.TabIndex = 69;
-            this.btnarsiv.Text = "Kargoya Arşive Kaldır";
-            this.btnarsiv.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(16, 376);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 17);
-            this.label10.TabIndex = 70;
-            this.label10.Text = "Seçilen Kargo ID :";
-            // 
-            // lblkargoid
-            // 
-            this.lblkargoid.AutoSize = true;
-            this.lblkargoid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblkargoid.Location = new System.Drawing.Point(143, 376);
-            this.lblkargoid.Name = "lblkargoid";
-            this.lblkargoid.Size = new System.Drawing.Size(24, 17);
-            this.lblkargoid.TabIndex = 71;
-            this.lblkargoid.Text = "00";
-            // 
-            // lblkargoid2
-            // 
-            this.lblkargoid2.AutoSize = true;
-            this.lblkargoid2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblkargoid2.Location = new System.Drawing.Point(470, 376);
-            this.lblkargoid2.Name = "lblkargoid2";
-            this.lblkargoid2.Size = new System.Drawing.Size(24, 17);
-            this.lblkargoid2.TabIndex = 73;
-            this.lblkargoid2.Text = "00";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label27.Location = new System.Drawing.Point(336, 376);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(121, 17);
-            this.label27.TabIndex = 72;
-            this.label27.Text = "Seçilen Kargo ID :";
-            // 
-            // lblkargoid3
-            // 
-            this.lblkargoid3.AutoSize = true;
-            this.lblkargoid3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblkargoid3.Location = new System.Drawing.Point(805, 376);
-            this.lblkargoid3.Name = "lblkargoid3";
-            this.lblkargoid3.Size = new System.Drawing.Size(24, 17);
-            this.lblkargoid3.TabIndex = 75;
-            this.lblkargoid3.Text = "00";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label29.Location = new System.Drawing.Point(678, 376);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(121, 17);
-            this.label29.TabIndex = 74;
-            this.label29.Text = "Seçilen Kargo ID :";
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Kargo ID";
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Barkod";
-            this.columnHeader12.Width = 65;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Alıcı Adı";
-            this.columnHeader13.Width = 59;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Alıcı Adres";
-            this.columnHeader14.Width = 66;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "İçerik";
-            // 
-            // listdagitim
-            // 
-            this.listdagitim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader16,
-            this.columnHeader17,
-            this.columnHeader18,
-            this.columnHeader19,
-            this.columnHeader20});
-            this.listdagitim.FullRowSelect = true;
-            this.listdagitim.Location = new System.Drawing.Point(339, 41);
-            this.listdagitim.Name = "listdagitim";
-            this.listdagitim.Size = new System.Drawing.Size(314, 297);
-            this.listdagitim.TabIndex = 76;
-            this.listdagitim.UseCompatibleStateImageBehavior = false;
-            this.listdagitim.View = System.Windows.Forms.View.Details;
-            this.listdagitim.Click += new System.EventHandler(this.listdagitim_Click);
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Kargo ID";
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Barkod";
-            this.columnHeader17.Width = 57;
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Alıcı Adı";
-            this.columnHeader18.Width = 64;
-            // 
-            // columnHeader19
-            // 
-            this.columnHeader19.Text = "Alıcı Adres";
-            this.columnHeader19.Width = 67;
-            // 
-            // columnHeader20
-            // 
-            this.columnHeader20.Text = "İçerik";
-            // 
-            // listteslim
-            // 
-            this.listteslim.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader21,
-            this.columnHeader22,
-            this.columnHeader23,
-            this.columnHeader24,
-            this.columnHeader25});
-            this.listteslim.FullRowSelect = true;
-            this.listteslim.Location = new System.Drawing.Point(671, 42);
-            this.listteslim.Name = "listteslim";
-            this.listteslim.Size = new System.Drawing.Size(314, 297);
-            this.listteslim.TabIndex = 77;
-            this.listteslim.UseCompatibleStateImageBehavior = false;
-            this.listteslim.View = System.Windows.Forms.View.Details;
-            this.listteslim.Click += new System.EventHandler(this.listteslim_Click);
-            // 
-            // columnHeader21
-            // 
-            this.columnHeader21.Text = "Kargo ID";
-            // 
-            // columnHeader22
-            // 
-            this.columnHeader22.Text = "Barkod";
-            // 
-            // columnHeader23
-            // 
-            this.columnHeader23.Text = "Alıcı Adı";
-            this.columnHeader23.Width = 65;
-            // 
-            // columnHeader24
-            // 
-            this.columnHeader24.Text = "Alıcı Adres";
-            this.columnHeader24.Width = 65;
-            // 
-            // columnHeader25
-            // 
-            this.columnHeader25.Text = "İçerik";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(6, 346);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 17);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Barkoda Göre Ara :";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(336, 346);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(131, 17);
-            this.label26.TabIndex = 79;
-            this.label26.Text = "Barkoda Göre Ara :";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label28.Location = new System.Drawing.Point(668, 346);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(131, 17);
-            this.label28.TabIndex = 80;
-            this.label28.Text = "Barkoda Göre Ara :";
             // 
             // AdminControl
             // 
