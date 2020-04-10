@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace KargoOtomasyonu
 {
     public partial class KargoDuzenle : Form
     {
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-NVUBKFR;Initial Catalog=Kargo;Integrated Security=True");
         public KargoDuzenle()
         {
             InitializeComponent();
+        }
+        private void kargobilgicek()
+        {
+            baglanti.Open();
+
         }
 
         private void btnkargodegistir_Click(object sender, EventArgs e)
